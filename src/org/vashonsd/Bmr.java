@@ -7,6 +7,8 @@ public class Bmr {
     static int exercise;
 
 
+
+
     public Bmr(String gender, int height, double weight, int age, int exercise) {
         this.gender = gender;
         this.height = height;
@@ -14,8 +16,9 @@ public class Bmr {
         this.age = age;
         this.exercise = exercise;
 
-    }
 
+    }
+    // calculates the users basal metabolic rate
     public double getBMR() {
         double usersBMR1;
         if (gender.equals("male")) {
@@ -27,7 +30,7 @@ public class Bmr {
 
 
     }
-
+    //uses the users BMR to find how many calories they should be eating per day
     public void getCalories() {
         double userBmr = getBMR();
 
